@@ -5,7 +5,7 @@ date:   2016-12-03 10:26:00 +0100
 categories: blog
 ---
 
-# Volle Transparenz
+# Volle Transparenz!
 
 Ab sofort liefere ich meine Seiten über [github.com][github] aus, der Quellcode der kompletten Webseite von [zechendorf.com][zechendorf] steht dort im Repository [zechendorf.github.io][zechendorf.github.io-repository] zur Verfügung, kann angesehen und Änderungen vorgeschlagen werden.
 

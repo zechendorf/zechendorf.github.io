@@ -1,12 +1,23 @@
 ---
 layout: default
 ---
+<aside class="area lightGrey" id="aboveContent">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-9 " id="breadcrumb">
+				<a href="/"><i class="fa fa-home"></i></a><a href="/#homeBlog">Blog</a><a href="{{ page.url }}">{{ page.title }}</a>
+			</div>
+			<div class="col-xs-12 col-sm-3" id="pageDate">
+				<a href="https://github.com/zechendorf/zechendorf.github.io/edit/master/{{ page.path }}" title="Edit me on GitHub" class="gitHubEdit">Edit me on GitHub</a>
+			</div>
+		</div>
+	</div>
+</aside>
 <section class="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8 col-md-offset-2">
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-					<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 					<div class="post-content" itemprop="articleBody">
 						{{ content }}
 					</div>

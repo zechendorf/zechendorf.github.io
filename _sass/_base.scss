@@ -510,22 +510,21 @@ section.content p{
 }
 
 
-.subPage.subPageBigImage #aboveContent .pageCrdate{
+#aboveContent.aboveContentBigImage .pageCrdate{
 	color: rgba(255,255,255,1);
 	text-shadow: 0 0 3px rgb(48,48,48);
 }
 
-.subPage.subPageBigImage #aboveContent .pageTstamp{
+.aboveContentBigImage #aboveContent .pageTstamp{
 	color: rgba(255,255,255,.7);
 	text-shadow: 0 0 3px rgb(48,48,48);
 }
 
-.subPage.subPageBigImage #aboveContent{
+#aboveContent.aboveContentBigImage{
 	background: linear-gradient(rgba(48,48,48,0),rgba(48,48,48,.8));
 	padding: 15px 0;
-	margin-top: -70px;
+	margin-top: 266px;
 	width: 100%;
-	position: absolute;
 }
 
 /* ************* *

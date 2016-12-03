@@ -3,6 +3,7 @@ layout: post
 title:  "Relaunch: krahn.eu"
 date:   2016-08-31 12:00:00 +0100
 categories: referenzen
+teaser_image: images/posts/clients-krahn-teaser.jpg
 ---
 
 # Relaunch krahn.eu

@@ -226,22 +226,24 @@ layout: home
 				<div class="container">
 					<div class="row">
 						{% for post in site.posts %}
-						<article class="col-xs-12 col-sm-6">
-							<div class="row">
-								<a href="{{ post.url | prepend: site.baseurl }}">
-									<div class="image col-xs-4 col-sm-4 col-lg-5">
-										<img class="slide-image" src="{{ post.teaser_image }}" alt="{{ post.title }}" title="{{ post.title }}">
+							{% if post.teaser_image %}
+								<article class="col-xs-12 col-sm-6">
+									<div class="row">
+										<div class="image col-xs-4 col-sm-4 col-lg-5">
+											<a href="{{ post.url | prepend: site.baseurl }}">
+												<img class="slide-image" src="{{ post.teaser_image }}" alt="{{ post.title }}" title="{{ post.title }}">
+											</a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-lg-7">
+											<div class="teaser">
+												<p class="date">{{ post.date | date: "%d.%m.%Y" }}</p>
+												<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+												<p><a href="{{ post.url | prepend: site.baseurl }}">weiterlesen</a></p>
+											</div>
+										</div>
 									</div>
-								</a>
-								<div class="col-xs-8 col-sm-8 col-lg-7">
-									<div class="teaser">
-										<p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
-										<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-										<p><a href="{{ post.url | prepend: site.baseurl }}">weiterlesen</a></p>
-									</div>
-								</div>
-							</div>
-						</article>
+								</article>
+							{% endif %}
 						{% endfor %}
 					</div>
 				</div>

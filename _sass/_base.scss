@@ -329,10 +329,6 @@ header nav a:focus{
 	padding-bottom: 0;
 }
 
-#home .blogTeaser .teaser{
-	margin-left: -15px;
-}
-
 #home .blogTeaser article{
 	margin-bottom: 30px;
 	font-size: .6em;
@@ -428,6 +424,8 @@ header nav a:focus{
 /* ************* *
  *  BREADCRUMB   *
  * ***************/
+a.githubEdit,
+a.githubEdit:hover,
 #breadcrumb a{
 	display: inline-block;
 	margin-right: 8px;
@@ -439,6 +437,8 @@ header nav a:focus{
 	transition: .5s;
 }
 
+
+a.githubEdit,
 .subPage.subPageBigImage #breadcrumb a:hover,
 #breadcrumb a:hover{
 	border: 2px solid rgba(68,68,68,1);
@@ -451,6 +451,7 @@ header nav a:focus{
 	color: rgba(255,255,255,1);
 	background: rgba(68,68,68,.8);
 }
+
 
 /* ************* *
  *    SUBPAGE    *

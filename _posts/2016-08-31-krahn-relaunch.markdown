@@ -16,8 +16,9 @@ Für meinen Partner [RosenbauerSolbach][rosenbauersolbach] habe ich das TYPO3 Sy
 
 * Fünf Sprachen (Englisch, Deutsch, Niederländisch, Italienisch, Polnisch)
 * 13 Vertriebsregionen
-* 555 Produkte die in den 13 Vertriebsregionen in jeweils individuellen mehrstufigen Baumstrukturen zugeordnet sind und selbstverständlich in allen fünf Sprachen zur Verfügung stehen
-* Suchfunktion mit AJAX-Suchvorschlägen über Inhalte der Seite und die Produktdatenbank
+* 555 Produkte die in den 13 Vertriebsregionen in jeweils individuellen mehrstufigen Baumstrukturen zugeordnet sind und selbstverständlich in die jeweilige Landessprache übersetzt sind
+* Suchfunktion mit AJAX-Suchvorschlägen, sowohl über Inhalte der Seite als auch über die Produktdatenbank
+* Ausgabe der Icons der zugeordneten Produktsegmente je Produkt in der Suchergebnisseite (und in der AJAX Vorschau)
 * Filterfunktion je Region nach den für die Region existenten Filterkriterien
 * Export der Produktdatenbank über das TYPO3 Backend
 

@@ -7,7 +7,7 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<style>
-		body{
+		body#z{
 			font-family: 'PT Serif', serif;
 			font-size: 21px;
 			line-height: 1.6em;
@@ -16,14 +16,14 @@
 			margin: 0;
 			padding: 70px 0 0 0;
 		}
-		h1,h2,h3,h4,h5,h6{font-family: 'Roboto', serif;font-weight: 700;}
-		h1{font-size: 1.6em; margin: 2em 0 0.5em 0;}
-		h2{font-size: 1.4em; margin: 1.5em 0 .5em 0;}
-		h3{font-size: 1.2em; margin: 1.5em 0 0.25em 0;}
-		p{margin: 0 0 1em 0;}
-		a{color: #337ab7;text-decoration: none;}
-		a:hover,a:focus{color: #333;text-decoration: underline;}
-		header{
+		#z h1,#z h2,#z h3,#z h4,#z h5,#z h6{font-family: 'Roboto', serif;font-weight: 700;}
+		#z h1{font-size: 1.6em; margin: 2em 0 0.5em 0;}
+		#z h2{font-size: 1.4em; margin: 1.5em 0 .5em 0;}
+		#z h3{font-size: 1.2em; margin: 1.5em 0 0.25em 0;}
+		#z p{margin: 0 0 1em 0;}
+		#z a{color: #337ab7;text-decoration: none;}
+		#z a:hover,#z a:focus{color: #333;text-decoration: underline;}
+		#z header{
 			position: fixed;
 			top: 0;
 			background: #ae2228;
@@ -31,29 +31,29 @@
 			text-align: left;
 			width: 100%;
 		}
-		header .logo{
+		#z header .logo{
 			padding: 22px 0;
 		}
-		header .logo svg{
+		#z header .logo svg{
 			display: inline-block;
 		}
-		.container{
+		#z .container{
 			max-width: 1140px;
 			padding: 0px 15px;
 			margin: auto;
 		}
-		article.post{
+		#z article.post{
 			max-width: 780px;
 			margin: auto;
 		}
 		.background-secondary{
 				background: #282828;
 		}
-		footer{
+		#z footer{
 			border-bottom: 10px solid #b0c600;
 		}
 		@media (max-width: 760px){
-			body{
+			#z body{
 				font-size: 16px;
 			}
 		}

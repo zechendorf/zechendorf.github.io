@@ -27,9 +27,18 @@
 			position: fixed;
 			top: 0;
 			background: #ae2228;
-			height: 70px;
+			height: 69px;
+			border-bottom: 1px solid #ae2228;
 			text-align: left;
 			width: 100%;
+			transition: .5s;
+		}
+		header.scrolled{
+			background: rgba(255,255,255,.9);
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+		header.scrolled .white{
+			fill: #86848;
 		}
 		header .logo{
 			padding: 22px 0;
@@ -49,6 +58,19 @@
 		.background-secondary{
 				background: #282828;
 		}
+		.call-to-action-secondary{
+			background: rgb(40, 40, 40);
+			color: #fff;
+			font-family: Roboto, sans-serif;
+			font-weight: 300; 	
+		}
+		.call-to-action-content{
+			font-size: 1.5em;
+			padding: 1.5em 0;
+		}
+		.align-center{text-align: center;}
+		.align-right{text-align: right;}
+		.align-left{text-align: left;}
 		footer{
 			border-bottom: 10px solid #b0c600;
 		}

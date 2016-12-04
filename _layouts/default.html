@@ -3,7 +3,7 @@
 	{% include head.html %}
 	<body>
 		{% include header.html %}
-		<main>
+		<main id="main">
 			<div class="container">
 				<article class="post">
 					{{ content }}
@@ -11,6 +11,13 @@
 			</div>
 		</main>
 		{% include footer.html %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		document.onscroll=function(){
+			console.log(document.getElementById('main').scrollTop);
+		}
+	</script>
 	</body>
 </html>
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,700,900" rel="stylesheet">

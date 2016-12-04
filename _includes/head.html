@@ -42,6 +42,11 @@
 		footer{
 			border-bottom: 10px solid #b0c600;
 		}
+		@media (max-width: 760px){
+			body{
+				font-size: 16px;
+			}
+		}
 	</style>
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

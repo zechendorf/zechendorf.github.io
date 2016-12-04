@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Kostenloses Website Hosting"
 date:   2016-12-03 12:43:00 +0100
 categories: blog

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Volle Transparenz!"
 date:   2016-12-03 10:26:00 +0100
 categories: blog

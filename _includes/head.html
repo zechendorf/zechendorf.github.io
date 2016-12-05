@@ -39,6 +39,7 @@
 		}
 		header .logo{
 			padding: 22px 0;
+			float: left;
 		}
 		header.scrolled .logo svg#logo-grey,
 		header .logo svg#logo-white{
@@ -63,8 +64,13 @@
 			display: block;
 		}
 		
+		header .githubEdit{
+			float: right;
+			font-family: 'Roboto', serif;font-weight: 300;
+			font-size: 0.8em;
+		}
 		.container{
-			max-width: 1140px;
+			max-width: 1170px;
 			padding: 0px 15px;
 			margin: auto;
 		}
@@ -88,6 +94,62 @@
 		.align-center{text-align: center;}
 		.align-right{text-align: right;}
 		.align-left{text-align: left;}
+		
+		a.btn,
+		.btn{
+			line-height: 1.1em;
+			border-radius: .9em;
+			background: #333;
+			border: 2px solid #333;
+			display: inline-block;
+			padding: 0.25em .5em;
+			color: #fff;
+			transition: .5s;
+		}
+		
+		btn:hover,
+		a.btn:hover,
+		a.btn:focus{
+			color: #333;
+			background: #fff;
+			text-decoration: none;
+		}
+		
+		.btn svg{
+			vertical-align: top;
+			width: 1em; 
+			height: 1em;
+		}
+		header .githubEdit{
+			line-height: 70px;
+			}
+		header a.btn:hover{
+			color: #333;
+			background: #fff;
+			border: 2px solid #fff;
+		}
+		header a.btn:hover svg path{ fill: #333;}
+		header a.btn{
+			color: #fff;
+			background: none;
+			border: 2px solid #fff;
+		}
+		header a.btn svg path{ fill: #fff;}
+		
+		header.scrolled a.btn{
+			color: #868484;
+			border-color: #868484;
+		}
+		header.scrolled a.btn svg path{ fill: #868484;}
+		
+		header.scrolled a.btn:hover{
+			color: #fff;
+			border-color: #868484;
+			background: #868484;
+		}
+		header.scrolled a.btn:hover svg path{ fill: #fff;}
+		
+		
 		footer{
 			border-bottom: 10px solid #b0c600;
 		}
@@ -97,6 +159,10 @@
 			}
 			header .logo{
 				text-align: center;
+				float: none;
+			}
+			header .githubEdit{
+				display: none;
 			}
 		}
 	</style>

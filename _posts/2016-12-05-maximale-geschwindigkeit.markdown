@@ -5,7 +5,7 @@ date:   2016-12-05 08:00:00 +0100
 categories: blog
 ---
 
-# Optimieren von Webseiten auf optimale Geschwindigkeit
+# Optimieren von Webseiten auf maximale Geschwindigkeit
 
 Spätestens seit dem Google die Auslieferungszeiten bzw. Ladegeschwindigkeiten von Webseiten als Ranking-Kriterium verwendet ist das Bewusstsein von Webseiten-Betreibern hierfür deutlich angestiegen.
 

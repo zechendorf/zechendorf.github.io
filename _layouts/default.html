@@ -3,14 +3,14 @@
 	{% include head.html %}
 	<body id="z">
 		{% include header.html %}
-		<main id="main">
+		<main id="main" class="fade-in">
 			<div class="container">
 				<article class="post">
 					{{ content }}
 				</article>
 			</div>
 		</main>
-		<section class="call-to-action call-to-action-secondary">
+		<section class="call-to-action call-to-action-secondary fade-in">
 			<div class="container">
 				<div class="call-to-action-content align-center">
 					<div class="row">
@@ -28,6 +28,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$('.fade-in').fadeIn();
+			
 			/* **********************
 			* HEADER ONSCROLL *
 			*********************** */

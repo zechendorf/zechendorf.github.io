@@ -37,15 +37,32 @@
 			background: rgba(255,255,255,.9);
 			border-bottom: 1px solid rgba(0,0,0,.1);
 		}
-		header.scrolled .white{
-			fill: #86848;
-		}
 		header .logo{
 			padding: 22px 0;
 		}
-		header .logo svg{
+		header.scrolled .logo svg#logo-grey,
+		header .logo svg#logo-white{
 			display: inline-block;
+			position: absolute;
+			transition: 1s;
 		}
+		
+		header.scrolled .logo svg#logo-white,
+		header .logo svg#logo-grey{
+			display: inline-block;
+			position: absolute;
+			transition: 1s;
+		}
+		
+		header .logo svg#logo-grey,
+		header.scrolled .logo svg#logo-white{
+			display: none;
+		}
+		header.scrolled .logo svg#logo-grey,
+		header .logo svg#logo-white{
+			display: block;
+		}
+		
 		.container{
 			max-width: 1140px;
 			padding: 0px 15px;

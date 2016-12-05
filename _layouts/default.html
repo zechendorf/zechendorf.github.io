@@ -30,11 +30,9 @@
 						shrinkOn = 100;
 					if (distanceY > shrinkOn) {
 						$('header').addClass('scrolled');
-						$('header path.white').css({fill:'#86848'});
 					} else {
 						if ($('header').hasClass('scrolled')) {
 							$('header').removeClass('scrolled');
-						$('header path.white').css({fill:'#ffffff'});
 						}
 					}
 				});

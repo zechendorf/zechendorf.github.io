@@ -91,6 +91,12 @@
 			font-size: 1.5em;
 			padding: 1.5em 0;
 		}
+		
+		.call-to-action .githubEdit{
+			font-size: .6em;
+			margin-top: 1em;
+		}
+		
 		.align-center{text-align: center;}
 		.align-right{text-align: right;}
 		.align-left{text-align: left;}
@@ -128,7 +134,7 @@
 			background: #fff;
 			border: 2px solid #fff;
 		}
-		header a.btn:hover svg path{ fill: #333;}
+		header a.btn:hover svg path,header a.btn:focus svg path{ fill: #333;}
 		header a.btn{
 			color: #fff;
 			background: none;
@@ -142,7 +148,8 @@
 		}
 		header.scrolled a.btn svg path{ fill: #868484;}
 		
-		header.scrolled a.btn:hover{
+		header.scrolled a.btn:hover,
+		header.scrolled a.btn:focus{
 			color: #fff;
 			border-color: #868484;
 			background: #868484;
@@ -160,6 +167,8 @@
 			header .logo{
 				text-align: center;
 				float: none;
+				width: 195px;
+				margin: auto;
 			}
 			header .githubEdit{
 				display: none;

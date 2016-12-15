@@ -1,24 +1,2 @@
 <footer class="background-secondary">
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		/* **********************
-		* HEADER ONSCROLL *
-		*********************** */
-		if($('header').length){
-			window.addEventListener('scroll', function(e){
-				var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-					shrinkOn = 100;
-				if (distanceY > shrinkOn) {
-					$('header').addClass('scrolled');
-				} else {
-					if ($('header').hasClass('scrolled')) {
-						$('header').removeClass('scrolled');
-					}
-				}
-			});
-		}
-	});
-</script>
-<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto:300,400,700,900" rel="stylesheet">

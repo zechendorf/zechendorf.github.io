@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Maximale Geschwindigkeit"
+excerpt: "So werden Webseiten auf maximale Performance auf allen Endgeräten optimiert"
 date:   2016-12-05 08:00:00 +0100
 categories: blog
 ---

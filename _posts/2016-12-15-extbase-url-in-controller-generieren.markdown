@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Extbase: URL in Controller generieren"
+excerpt: "In diesem Post beschreibe ich, wie im PHP des Controllers eine saubere URL generiert werden kann"
 date:   2016-12-15 11:00:00 +0100
 categories: blog
 ---
@@ -8,6 +9,8 @@ categories: blog
 # Extbase: URL in Controller generieren
 
 In der Regel müssen URLs erst im Template über einen Fluid ViewHelper generiert werden, in manchen Fällen (zum Beispiel wenn man bereits im Controller einen Canonical Tag ausgeben will), ist es allerdings notwendig die URL bereits im Controller zu generieren.
+
+Damit die Hash-Parameter (oder die suchmaschinenfreundliche URL, z.B. via RealUrl) sauber generiert werden, reicht es nicht aus, die URL selber "zusammenzubauen" sondern Sie muss vom TYPO3 systemseitig generiert werden.
 
 Hierfür stellt der AbstractController in TYPO3 die Klasse [UriBuilder][UriBuilder-Class-Reference] in der Variable `uriBuilder` bereit.
 

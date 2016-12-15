@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "Kostenloses Website Hosting"
+excerpt: "Mithilfe von GitHub und Cloudflare kann eine SSL verschlüsselte Seite kostenlos gehostet werden"
 date:   2016-12-03 12:43:00 +0100
 categories: blog
 ---

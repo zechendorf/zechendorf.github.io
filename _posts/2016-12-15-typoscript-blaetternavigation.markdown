@@ -21,3 +21,4 @@ Vielleicht hilft das hier Bereit gestellte TypoScript ja dem Einen oder Anderen 
 <script src="https://gist.github.com/zechendorf/fcd0094efd3282fae1871a08a0e9b866.js"></script>
 
 [kloetzner-company]: https://kloetzner.company
+[kloetzner-screenshot]: assets/posts/20161215/screenshot-kloetzner.png

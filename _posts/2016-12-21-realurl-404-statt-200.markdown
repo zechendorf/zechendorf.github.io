@@ -1,0 +1,23 @@
+---
+layout: default
+title:  "RealURL - HTML Status Error 404 statt 200 OK"
+excerpt: "So kann RealURL konfiguriert werden, damit nicht existierende URLs mit Status 404 statt Status 301 ausgeliefert werden."
+date:   2016-12-21 09:50:00 +0100
+categories: blog
+---
+
+# RealUrl - HTML Status Error 404 statt 200 OK
+
+Wo viel konfiguriert werden kann, gibt es viele Fehlerquellen.
+
+Diese Erfahrung habe ich gerade mit dem TYPO3 eines Kunden gesammelt das Partout keine Fehler produzieren wollte. Egal mit welcher URL ich die Seite aufgerufen habe, der Server lieferte immer die Startseite aus und antwortete mit ``Status 200 OK``. Das ist aus SEO-Gesichtspunkten natürlich extrem suboptimal, da man so jede Menge Duplicate Content produziert.
+
+Nachdem ich die Apache-Konfiguration sowie die .htaccess als Fehlerquelle ausgeschlossen hatte, lief alles darauf hinaus, das die Ursache in der Konfiguration von RealURL zu finden ist. Leider brachte (auf Grund der .htaccess-Konfiguration) das Deaktivieren von RealURL keine Besserung (was an der .htaccess-Konfiguration lag), dennoch war die Konfiguration von RealURL ursächlich für das fehlerhafte Verhalten.
+
+In der Konfigurations-Datei von RealURL (für gewöhnlich ``realurl_conf.php``) gibt es den Konfigurationsparameter ``postVarSet_failureMode`` im init-Array.
+
+Wenn dieser auf ``false`` gesetzt wird, werden Anfragen an nicht existente URLs mit einem ``Status: 404 not found`` beantwortet:
+
+```
+$[...]['init']['postVarSet_failureMode'] = false;
+```

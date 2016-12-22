@@ -16,8 +16,4 @@ Nachdem ich die Apache-Konfiguration sowie die .htaccess als Fehlerquelle ausges
 
 In der Konfigurations-Datei von RealURL (für gewöhnlich ``realurl_conf.php``) gibt es den Konfigurationsparameter ``postVarSet_failureMode`` im init-Array.
 
-Wenn dieser auf ``false`` gesetzt wird, werden Anfragen an nicht existente URLs mit einem ``Status: 404 not found`` beantwortet:
-
-```
-$[...]['init']['postVarSet_failureMode'] = false;
-```
+Wenn dieser auf ``false`` gesetzt wird, werden Anfragen an nicht existente URLs mit einem ``Status: 404 not found`` beantwortet.

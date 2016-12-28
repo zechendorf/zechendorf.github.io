@@ -23,7 +23,7 @@
 		h3{font-size: 1.2em; margin: 1.5em 0 0.25em 0;}
 		p{margin: 0 0 1em 0;}
 		a{color: rgb(134, 132, 132);text-decoration: none;}
-		a:hover,a:focus{color: #333;text-decoration: underline;}
+		a:hover,a:focus{color: #000;text-decoration: underline;}
 		header{
 			position: fixed;
 			top: 0;
@@ -162,6 +162,16 @@
 			background: #868484;
 		}
 		header.scrolled a.btn:hover svg path{ fill: #fff;}
+		
+		.blogTeaser h3 a{
+			transition: .5s;
+		}
+		
+		.blogTeaser h3 a:hover,
+		.blogTeaser h3 a:focus{
+			color: #000;
+			text-decoration: none;
+		}
 		
 		footer{
 			border-bottom: 10px solid #b0c600;

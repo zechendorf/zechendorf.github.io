@@ -12,4 +12,52 @@ In manchen Szenarien ist es notwendig bestehende Datentypen durch eine Extension
 
 Dieser Beitrag beschreibt, welche Ergänzungen in den Dateien der Extension vorgenommen werden müssen, um dieses Ergebnis zu erreichen.
 
+## 1. Feld in der Datenbank ergänzen
+
+Über die Date ``ext_tables.sql`` im Basis-Verzeichnis der Extension wird die Datenbank konfiguriert. Im vorliegenden Fall, wollen wir die Tabelle ``fe_users`` um eine Spalte ``tx_ggpolicy_client`` ergänzen, in der dann die UID des Client-Datensatzes verwiesen wird.
+
+```
+#
+# Table structure for table 'fe_users'
+#
+CREATE TABLE fe_users (
+    tx_ggpolicy_client int(11) unsigned DEFAULT '0' NOT NULL
+);
+```
+
+Tipp: Änderungen des Datenbankmodells (also dessen was in der ``ext_tables.sql`` steht) werden immer nur bei der Installation der Extension tatsächlich in der Datenbank ergänzt. Um die Felder also in der Datenbank zu erzeugen muss die Extension neu installiert werden.
+
+## 2. Felder über TCA im TYPO3 Backend zugreifbar machen
+
+Damit die Felder auch im TYPO3 Backend redaktioniell definierbar sind, muss das TCA von fe_users erweitert werden. Dies geschieht automatisiert, wenn man im Verzeichnis ``Configuration/TCA/Overrides`` eine Datei ``fe_users.php`` anlegt. Über diese kann dann der Datentyp erweitert werden
+
+```
+<?php
+if (!defined('TYPO3_MODE')) {
+    // nur Zugriff innerhalb von TYPO3 zulassen
+    die('Access denied.');
+}
+
+// dies ist die TCA Ergänzung für das neue Feld
+$tmp_ggpolicy_columns = array(
+    'tx_ggpolicy_client' => array(
+        'exclude' => 1,
+        'label' =>  'Client',
+        'config' => array(
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tx_ggpolicy_domain_model_client'
+        )
+    ),
+);
+
+// TCA Ergänzung zu fe_users hinzufügen
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('fe_users',$tmp_ggpolicy_columns);
+
+// Feld im Backend bereit stellen
+$GLOBALS['TCA']['fe_users']['interface']['showRecordFieldList'] .= ',tx_ggpolicy_client';
+
+// Feld im Backend unter einem eigenen Reiter sichtbar machen
+$GLOBALS['TCA']['fe_users']['types']['0']['showitem'] .= ',--div--;Certificates, tx_ggpolicy_client';
+```
 

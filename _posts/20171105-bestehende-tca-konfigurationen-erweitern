@@ -1,0 +1,15 @@
+---
+layout: default
+title:  "Bestehende TCA Konfigurationen in TYPO3 Extension erweitern (Beispiel: fe_user)"
+excerpt: "Am Beispiel von fe_user wird beschrieben, wie in einer TYPO3 Extension andere Datentypen erweitert werden können"
+date:   2017-11-04 08:00:00 +0100
+categories: blog
+---
+
+# Bestehende TCA Konfigurationen in TYPO3 Extension erweitern
+
+In manchen Szenarien ist es notwendig bestehende Datentypen durch eine Extension zu erweitern. Im vorliegenden Fall soll beim Datentyp ``fe_user`` ein Verweis auf einen neuen Datentyp ``tx_ggpolicy_domain_model_client`` hinterlegt werden.
+
+Dieser Beitrag beschreibt, welche Ergänzungen in den Dateien der Extension vorgenommen werden müssen, um dieses Ergebnis zu erreichen.
+
+
